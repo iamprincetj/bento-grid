@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "DMSans-Var";
+  src: url("../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf");
+}
+
+@font-face {
+  font-family: "DMSans-Ita";
+  src: url("../assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf");
+}
+
+:root {
+  --Purple100: hsl(254, 88%, 90%);
+  --Purple500: hsl(256, 67%, 59%);
+
+  --Yellow100: hsl(31, 66%, 93%);
+  --Yellow500: hsl(39, 100%, 71%);
+
+  --White: hsl(0, 0%, 100%);
+  --OffWhite: hsl(0, 0%, 95%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+body {
+  background-color: var(--OffWhite);
+  font-family: "DMSans-Var";
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+}
+
+.border-r {
+  border-radius: 0.5em;
+  margin: 2em 0;
+}
+
+.content-container {
+  margin: 1em auto;
+  overflow: hidden;
+  width: 95%;
+  max-width: 600px;
+}
+
+.content-container .content {
+  margin: 1em auto;
+  width: 92%;
+}
+
+/* SOCIAL MEDIA */
+
+.content-container .social-media {
+  background-color: var(--Purple500);
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.social-media span {
+  color: var(--Yellow500);
+}
+
+.social-media h1 {
+  color: var(--White);
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.social-media p {
+  color: var(--Yellow100);
+}
+
+.social-media img {
+  margin-top: 1em;
+  width: 10rem;
+}
+
+/* MULTIPLE ACCOUNT */
+
+.container .multiple-account {
+  background-color: var(--White);
+  padding: 1em 0;
+}
+
+.multiple-account h2 {
+  color: var(--Black);
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* POSTING SCHEDULE */
+
+.container .posting-schedule {
+  background-color: var(--Yellow500);
+  overflow: hidden;
+}
+
+.posting-schedule .content {
+  margin-bottom: 0;
+}
+
+.posting-schedule h2 {
+  font-weight: 600;
+  line-height: 1;
+}
+
+.posting-schedule img {
+  position: relative;
+  bottom: -1.5rem;
+  width: 65%;
+}
+
+/* SCHEDULE POSTS */
+
+.container .upper-aside {
+  background-color: var(--Purple100);
+  text-align: center;
+  padding: 0.1em 0;
+}
+
+.upper-aside h2 {
+}
+
+.upper-aside img {
+  margin: 1em 0;
+}
+
+/* MAIN LOWER SECTION */
+
+.container .lower-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.lower-section div {
+  margin: 0;
+}
+
+.lower-section .audience-growth {
+  background-color: var(--White);
+  order: 1;
+}
+
+.audience-growth img {
+  width: 50%;
+}
+
+.audience-growth h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.audience-growth span {
+  display: block;
+  font-size: 0.9rem;
+  margin: 1em 0;
+}
+
+.lower-section .grow-followers {
+  background-color: var(--Purple500);
+  margin-bottom: 2em;
+  padding: 0 3.5em;
+  text-align: center;
+}
+
+.grow-followers h2 {
+  color: var(--White);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.grow-followers img {
+  margin-bottom: 1em;
+}
+
+/* SCHEDULE CONTENT */
+
+.container .schedule-content {
+  background-color: var(--Yellow100);
+  padding: 0.1em 0;
+}
+
+.schedule-content h2 {
+  line-height: 1;
+}
+
+.schedule-content span {
+  color: var(--Purple500);
+  font-family: "DMSans-Ita";
+}
+
+.schedule-content img {
+  margin: 1em 0;
+  width: 50%;
+}
+
+/* AI CONTENT */
+
+.container .content-ai {
+  background-color: var(--Yellow500);
+  padding: 0.1em 0;
+}
+
+.content-ai h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0.8em 0;
+  line-height: 1;
+}
+
+.content-ai img {
+  width: 50%;
+}
+
+/* FOOTER */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 62em) {
+  img {
+    max-width: none;
+  }
+  .container .border-r {
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .container .content {
+    width: 85%;
+  }
+
+  .container .content-container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 90%;
+  }
+
+  /* MAIN CONTAINER */
+
+  .content-container .main-container {
+    order: 1;
+    width: 75%;
+  }
+
+  /* MAIN UPPER SECTION */
+
+  .main-container .upper-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+
+  .upper-section .upper-main {
+    width: 67%;
+  }
+
+  /* SOCIAL MEDIA */
+
+  .upper-main .social-media {
+    margin-bottom: 2em;
+    padding: 2.5em 0;
+  }
+
+  .social-media h1 {
+    font-size: 4.5rem;
+  }
+
+  .social-media img {
+    margin-top: 2em;
+    width: 15rem;
+  }
+
+  .social-media p {
+    font-size: 1.45rem;
+  }
+
+  .upper-main .upper-lower-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .upper-lower-container div {
+    width: 48%;
+  }
+
+  .upper-lower-container div h2 {
+    font-size: 2.5em;
+    line-height: 0.8;
+  }
+
+  .multiple-account,
+  .posting-schedule {
+    padding-top: 0.5em;
+  }
+
+  .upper-lower-container .multiple-account img {
+    margin-bottom: 2em;
+    width: 360px;
+  }
+
+  .posting-schedule img {
+    width: 100%;
+    margin-bottom: -4rem;
+    bottom: -1.7rem;
+  }
+
+  .upper-section .upper-aside {
+    text-align: left;
+    width: 30%;
+  }
+
+  .upper-aside h2 {
+    font-size: 2rem;
+  }
+
+  .upper-aside p {
+    font-size: 1.28rem;
+    line-height: 1;
+  }
+
+  .upper-aside img {
+    width: 480px;
+  }
+
+  /* MAIN LOWER SECTION */
+
+  .main-container .lower-section {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .lower-section .grow-followers {
+    box-sizing: border-box;
+    order: 1;
+    padding: 0.5em 0;
+    text-align: left;
+    width: 65%;
+  }
+
+  .grow-followers .content {
+    width: 90%;
+  }
+
+  .lower-section .grow-followers .content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .grow-followers h2 {
+    font-size: 2.5rem;
+  }
+  .grow-followers img {
+    margin: 0;
+    width: 50%;
+  }
+
+  .lower-section .audience-growth {
+    width: 32%;
+  }
+
+  .audience-growth h2 {
+    font-size: 5rem;
+  }
+
+  .audience-growth span {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .audience-growth img {
+    margin-top: 2.5em;
+    width: 100%;
+  }
+
+  /* ASIDE CONTAINER */
+
+  .content-container .aside-container {
+    width: 22%;
+  }
+
+  .aside-container .schedule-content {
+    margin-bottom: 2em;
+  }
+
+  .schedule-content .content {
+    margin: 4em auto;
+  }
+
+  .schedule-content img {
+    width: 100%;
+  }
+
+  .schedule-content h2 {
+    font-size: 3rem;
+  }
+
+  .aside-container .content-ai .content {
+  }
+
+  .content-ai h2 {
+    font-size: 3rem;
+    margin: 0.5em 0;
+  }
+
+  .content-ai img {
+    margin-top: 3em;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+}
