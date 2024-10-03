@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [here](https://github.com/iamprincetj/bento-grid)
-- Live Site URL: [here](https://your-live-site-url.com)
+- Live Site URL: [here](https://iamprincetj.github.io/bento-grid/)
 
 ## My process
 
